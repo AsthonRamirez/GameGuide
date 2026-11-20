@@ -1,11 +1,12 @@
-fastapi>=0.115,<1.0
-uvicorn[standard]>=0.30
-python-dotenv>=1.0
-google-genai>=1.0
-supabase>=2.0
-requests>=2.32
-beautifulsoup4>=4.12
-pydantic>=2.8
-pandas>=2.2
-plotly>=5.24
-fastembed>=0.5.0,<1.0
+# Probado con Python 3.12 (Python 3.14 tiene problemas de compatibilidad con varias dependencias en Windows).
+fastapi==0.165.0
+uvicorn[standard]>=0.30,<1.0
+python-dotenv==1.2.4
+google-genai==3.6.1
+supabase==2.34.1
+requests==2.34.2
+beautifulsoup4==4.15.0
+pydantic==2.14.4
+fastembed==0.9.1
+numpy>=1.26
+# pandas y plotly se eliminaron: solo los usaba código muerto heredado de Google Colab.

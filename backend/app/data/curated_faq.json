@@ -1,0 +1,204 @@
+[
+  {
+    "id": "elytra",
+    "keywords": [
+      "élitras?",
+      "elitras?",
+      "elytra"
+    ],
+    "title": "Cómo conseguir élitras (Elytra)",
+    "url": "https://minecraft.wiki/w/Elytra",
+    "content": "Las élitras (elytra) son un objeto de Minecraft Vanilla que se equipa en el slot del pecho y permite planear. No se pueden fabricar: solo se obtienen en los barcos del End (End Ships), que aparecen junto a algunas Ciudades del End (End Cities) en las islas exteriores de la dimensión del End. Pasos: 1) derrota al Ender Dragon; 2) usa la puerta del End (end gateway) que aparece al derrotarlo para viajar a las islas exteriores; 3) explora las Ciudades del End hasta encontrar un barco; 4) en el barco, las élitras están dentro de un marco de objetos (item frame); rómpelo y recógelas. No todas las Ciudades del End tienen barco y solo hay un par de élitras por barco. Para volar: salta y pulsa de nuevo el salto en el aire; con cohetes de fuegos artificiales puedes propulsarte. Se reparan en un yunque con membranas de fantasma y admiten Reparación (Mending)."
+  },
+  {
+    "id": "diamond",
+    "keywords": [
+      "diamantes?",
+      "diamonds?"
+    ],
+    "title": "Cómo conseguir diamantes",
+    "url": "https://minecraft.wiki/w/Diamond",
+    "content": "Los diamantes se obtienen minando mena de diamante (diamond ore) con un pico de hierro o superior. Desde la versión 1.18 generan en altitudes bajas: aproximadamente entre Y=16 y Y=-64, y son más frecuentes cerca del fondo del mundo (alrededor de Y=-58). Las menas de diamante también aparecen en versión deepslate. Técnica recomendada: minería en rama (branch mining) o túneles horizontales a esa altura, con cuidado por la lava, que abunda por debajo de Y=-54. También se pueden hallar diamantes en cofres de algunas estructuras. Un pico con Fortuna aumenta la cantidad de diamantes por mena. La altura exacta y las probabilidades pueden variar según la versión del juego."
+  },
+  {
+    "id": "netherite",
+    "keywords": [
+      "netherita",
+      "netherite",
+      "escombros antiguos",
+      "ancient debris"
+    ],
+    "title": "Cómo conseguir netherita",
+    "url": "https://minecraft.wiki/w/Netherite",
+    "content": "La netherita se consigue en el Nether. 1) Obtén escombros antiguos (ancient debris), más comunes alrededor de Y=15 (aprox. entre Y=8 y Y=22); se minan con pico de diamante o netherita. Las camas y la TNT son métodos populares para encontrarlos. 2) Funde los escombros antiguos en un horno o alto horno para obtener fragmentos de netherita (netherite scrap). 3) Combina 4 fragmentos de netherita con 4 lingotes de oro en una mesa de crafteo para obtener 1 lingote de netherita. 4) Para mejorar equipo de diamante a netherita, usa una mesa de herrería con una plantilla de herrería de mejora de netherita (netherite upgrade smithing template) y un lingote de netherita (versión 1.20 y posteriores). La plantilla se encuentra en los restos de bastión (bastion remnants) y se puede duplicar con diamantes y roca del Nether (netherrack). Los objetos de netherita no se destruyen con lava ni fuego."
+  },
+  {
+    "id": "villager_trading",
+    "keywords": [
+      "aldeanos?",
+      "villagers?",
+      "comerciar",
+      "comercio",
+      "trading"
+    ],
+    "title": "Aldeanos y comercio",
+    "url": "https://minecraft.wiki/w/Villager",
+    "content": "Los aldeanos comercian con esmeraldas. Cada aldeano obtiene una profesión al reclamar un bloque de trabajo cercano (por ejemplo atril para bibliotecario, caldero para peletero, mesa de herrero para armero). Al comerciar repetidamente suben de nivel y desbloquean mejores ofertas. Para reproducirlos necesitan camas libres y comida (pan, zanahorias, patatas o remolachas) y estar dispuestos. Para bajar los precios de forma permanente puedes curar a un aldeano zombi con una poción de debilidad y una manzana de oro. Los bibliotecarios son la fuente principal de libros encantados, incluido Reparación (Mending). Los aldeanos también pueden generar golems de hierro para defender la aldea."
+  },
+  {
+    "id": "nether_portal",
+    "keywords": [
+      "portal del nether",
+      "portal al nether",
+      "nether portal",
+      "entrar al nether",
+      "ir al nether"
+    ],
+    "title": "Cómo construir un portal al Nether",
+    "url": "https://minecraft.wiki/w/Nether_portal",
+    "content": "Para construir un portal del Nether necesitas obsidiana y un encendedor (mechero de pedernal y acero, flint and steel). El marco mínimo mide 4 bloques de ancho por 5 de alto (el interior es de 2x3) y requiere al menos 10 bloques de obsidiana, ya que las esquinas son opcionales. Una vez armado el marco, enciende el interior con el mechero para activar el portal. La obsidiana se mina con un pico de diamante o netherita. Un bloque recorrido en el Nether equivale a 8 bloques en el Overworld, lo que sirve para viajar rápido. También puedes crear obsidiana vertiendo agua sobre lava fuente."
+  },
+  {
+    "id": "end_portal",
+    "keywords": [
+      "portal del end",
+      "portal al end",
+      "end portal",
+      "ojos? de ender",
+      "eyes? of ender",
+      "fortaleza",
+      "stronghold",
+      "llegar al end",
+      "ir al end"
+    ],
+    "title": "Cómo llegar al End (portal del End)",
+    "url": "https://minecraft.wiki/w/End_portal",
+    "content": "El portal del End está dentro de una fortaleza (stronghold) subterránea. Para encontrarla, fabrica ojos de ender (eye of ender) combinando una perla de ender con polvo de blaze, y lánzalos: vuelan en dirección a la fortaleza más cercana. La sala del portal tiene 12 marcos de portal del End; hay que colocar un ojo de ender en cada marco vacío (algunos ya vienen con ojo). Cuando todos están llenos, el portal se activa y te lleva a la dimensión del End, donde está el Ender Dragon. Antes de entrar conviene llevar bloques, un arco con muchas flechas, comida y armadura."
+  },
+  {
+    "id": "enchanting",
+    "keywords": [
+      "encantamientos?",
+      "encantar",
+      "enchant",
+      "enchanting",
+      "mesa de encantamientos?",
+      "enchanting table"
+    ],
+    "title": "Encantamientos y mesa de encantamientos",
+    "url": "https://minecraft.wiki/w/Enchanting",
+    "content": "La mesa de encantamientos se fabrica con 4 bloques de obsidiana, 2 diamantes y 1 libro. Para encantar necesitas lapislázuli y niveles de experiencia. Rodear la mesa con estanterías (hasta 15, dejando un espacio de aire entre ellas y la mesa) desbloquea los encantamientos de nivel 30. Las opciones que ofrece la mesa son aleatorias; los libros encantados y el yunque permiten combinar encantamientos. Algunos encantamientos, como Reparación (Mending), no salen en la mesa: se consiguen con aldeanos, pesca o botín de cofres."
+  },
+  {
+    "id": "mending",
+    "keywords": [
+      "reparaci[oó]n",
+      "mending"
+    ],
+    "title": "Cómo conseguir Reparación (Mending)",
+    "url": "https://minecraft.wiki/w/Mending",
+    "content": "Reparación (Mending) es un encantamiento de tesoro: no aparece en la mesa de encantamientos. Se consigue como libro encantado comerciando con aldeanos bibliotecarios, pescando, o como botín en cofres de estructuras. Repara el objeto equipado usando la experiencia que recoges. Puedes combinarlo en un yunque con otros objetos."
+  },
+  {
+    "id": "ender_dragon",
+    "keywords": [
+      "ender dragon",
+      "drag[oó]n del end",
+      "derrotar al drag[oó]n",
+      "matar al drag[oó]n"
+    ],
+    "title": "Cómo derrotar al Ender Dragon",
+    "url": "https://minecraft.wiki/w/Ender_Dragon",
+    "content": "El Ender Dragon vive en la dimensión del End. Primero destruye los cristales del End (end crystals) que están sobre los pilares de obsidiana: algunos están dentro de jaulas de hierro; usa un arco para romperlos desde lejos. Los cristales curan al dragón, por lo que destruirlos es prioritario. Después ataca al dragón con arco o cuerpo a cuerpo cuando se posa en el portal central. Al morir suelta mucha experiencia, aparece un portal de salida y un huevo de dragón, y se abren puertas del End hacia las islas exteriores."
+  },
+  {
+    "id": "wither",
+    "keywords": [
+      "wither",
+      "jefe wither",
+      "invocar al wither"
+    ],
+    "title": "Cómo invocar al Wither",
+    "url": "https://minecraft.wiki/w/Wither",
+    "content": "Para invocar al Wither necesitas 4 bloques de arena de almas (soul sand) o tierra de almas (soul soil) y 3 calaveras de esqueleto Wither. Las calaveras se obtienen de esqueletos Wither en fortalezas del Nether. Se colocan los 4 bloques en forma de T y las 3 calaveras en la parte superior. Al derrotarlo suelta una estrella del Nether (nether star), necesaria para fabricar un faro (beacon). Conviene pelear en un lugar abierto o cerrado de forma segura y con armadura encantada."
+  },
+  {
+    "id": "trident",
+    "keywords": [
+      "tridentes?",
+      "trident"
+    ],
+    "title": "Cómo conseguir un tridente",
+    "url": "https://minecraft.wiki/w/Trident",
+    "content": "El tridente no se fabrica: se obtiene como botín poco frecuente de los ahogados (drowned) que lo llevan en la mano. Encantamientos como Lealtad (Loyalty), Riptide, Impaling y Channeling lo hacen muy versátil. Riptide permite impulsarse con agua o lluvia; Loyalty hace que regrese a ti tras lanzarlo."
+  },
+  {
+    "id": "totem",
+    "keywords": [
+      "tótem",
+      "totem",
+      "t[oó]tem de la inmortalidad",
+      "totem of undying"
+    ],
+    "title": "Cómo conseguir un tótem de la inmortalidad",
+    "url": "https://minecraft.wiki/w/Totem_of_Undying",
+    "content": "El tótem de la inmortalidad lo sueltan los evocadores (evokers), que aparecen en las mansiones del bosque (woodland mansions) y en algunas incursiones (raids). Si lo llevas en la mano principal o secundaria, evita la muerte una vez, te restaura algo de salud y te da efectos temporales, pero se consume."
+  },
+  {
+    "id": "potion",
+    "keywords": [
+      "pociones?",
+      "potions?",
+      "poci[oó]n",
+      "soporte para pociones",
+      "brewing stand",
+      "destilar"
+    ],
+    "title": "Cómo hacer pociones",
+    "url": "https://minecraft.wiki/w/Brewing",
+    "content": "Las pociones se preparan en un soporte para pociones (brewing stand), que se fabrica con una vara de blaze y 3 bloques de roca (cobblestone o similar). El soporte necesita polvo de blaze como combustible. Se colocan botellas de agua y un ingrediente en la parte superior. El primer paso suele ser una poción incómoda (awkward potion), hecha con verruga del Nether; sobre esa base se añaden otros ingredientes para crear la poción deseada (por ejemplo zanahoria dorada para visión nocturna). El polvo de pólvora la convierte en poción arrojadiza y el aliento de dragón en poción persistente."
+  },
+  {
+    "id": "iron_golem",
+    "keywords": [
+      "golem de hierro",
+      "iron golem"
+    ],
+    "title": "Cómo hacer un golem de hierro",
+    "url": "https://minecraft.wiki/w/Iron_Golem",
+    "content": "Un golem de hierro se construye colocando 4 bloques de hierro en forma de T (3 en fila y 1 debajo del centro) y una calabaza tallada o linterna de calabaza encima del centro. Defiende aldeas y suelta lingotes de hierro, por lo que se usa para granjas de hierro."
+  },
+  {
+    "id": "crafting_table",
+    "keywords": [
+      "mesa de (trabajo|crafteo|fabricaci[oó]n)",
+      "crafting table",
+      "crafteo b[aá]sico"
+    ],
+    "title": "Mesa de crafteo",
+    "url": "https://minecraft.wiki/w/Crafting_Table",
+    "content": "La mesa de crafteo (crafting table) se fabrica con 4 tablones de cualquier tipo de madera colocados en cuadrícula de 2x2, incluso en la cuadrícula de crafteo del inventario. Proporciona una cuadrícula de 3x3 para recetas más complejas."
+  },
+  {
+    "id": "respawn_bed",
+    "keywords": [
+      "cama",
+      "punto de aparici[oó]n",
+      "respawn",
+      "dormir"
+    ],
+    "title": "Camas y punto de aparición",
+    "url": "https://minecraft.wiki/w/Bed",
+    "content": "Dormir en una cama establece tu punto de aparición y pasa la noche si todos los jugadores necesarios duermen. Una cama se fabrica con 3 bloques de lana del mismo color y 3 tablones. En el Nether y el End las camas explotan al usarlas, por lo que no deben usarse allí para dormir. Si tu cama se destruye o queda obstruida, reaparecerás en el punto de aparición del mundo."
+  },
+  {
+    "id": "redstone",
+    "keywords": [
+      "redstone",
+      "circuitos?"
+    ],
+    "title": "Introducción a la redstone",
+    "url": "https://minecraft.wiki/w/Redstone_Dust",
+    "content": "El polvo de redstone transmite señal a lo largo de bloques; la señal tiene fuerza máxima 15 y se debilita con la distancia, por lo que se usan repetidores (repeater) para extenderla. Fuentes de señal comunes: palancas, botones, placas de presión y antorchas de redstone. Pistones, dispensadores, lámparas y puertas pueden activarse con redstone. La redstone se encuentra como mena en altitudes bajas, de forma similar a los diamantes."
+  }
+]

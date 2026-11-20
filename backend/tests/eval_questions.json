@@ -1,0 +1,175 @@
+[
+  {
+    "question": "Como consigo las elytras?",
+    "expect_any": [
+      "elytra"
+    ]
+  },
+  {
+    "question": "¿Dónde encuentro diamantes en la 1.20?",
+    "expect_any": [
+      "diamond"
+    ]
+  },
+  {
+    "question": "¿Cómo consigo netherita?",
+    "expect_any": [
+      "netherite",
+      "ancient debris"
+    ]
+  },
+  {
+    "question": "¿Cómo comercio con los aldeanos?",
+    "expect_any": [
+      "villager",
+      "trad"
+    ]
+  },
+  {
+    "question": "¿Cómo hago un portal al Nether?",
+    "expect_any": [
+      "nether portal",
+      "obsidian"
+    ]
+  },
+  {
+    "question": "¿Cómo llego al End?",
+    "expect_any": [
+      "end portal",
+      "eye of ender",
+      "stronghold"
+    ]
+  },
+  {
+    "question": "¿Cómo funciona la mesa de encantamientos?",
+    "expect_any": [
+      "enchant"
+    ]
+  },
+  {
+    "question": "¿Cómo consigo Reparación (Mending)?",
+    "expect_any": [
+      "mending"
+    ]
+  },
+  {
+    "question": "¿Cómo derroto al Ender Dragon?",
+    "expect_any": [
+      "ender dragon",
+      "end crystal"
+    ]
+  },
+  {
+    "question": "¿Cómo invoco al Wither?",
+    "expect_any": [
+      "wither",
+      "soul sand"
+    ]
+  },
+  {
+    "question": "¿Cómo consigo un tridente?",
+    "expect_any": [
+      "trident",
+      "drowned"
+    ]
+  },
+  {
+    "question": "¿Cómo consigo un tótem de la inmortalidad?",
+    "expect_any": [
+      "totem",
+      "evoker"
+    ]
+  },
+  {
+    "question": "¿Cómo hago pociones?",
+    "expect_any": [
+      "brewing",
+      "potion"
+    ]
+  },
+  {
+    "question": "¿Cómo construyo un golem de hierro?",
+    "expect_any": [
+      "iron golem"
+    ]
+  },
+  {
+    "question": "¿Cómo se hace una mesa de crafteo?",
+    "expect_any": [
+      "crafting table"
+    ]
+  },
+  {
+    "question": "¿Cómo funciona la redstone?",
+    "expect_any": [
+      "redstone"
+    ]
+  },
+  {
+    "question": "¿Para qué sirve el faro (beacon)?",
+    "expect_any": [
+      "beacon"
+    ]
+  },
+  {
+    "question": "¿Cómo domestico un lobo?",
+    "expect_any": [
+      "wolf",
+      "tame"
+    ]
+  },
+  {
+    "question": "¿Cómo consigo esmeraldas?",
+    "expect_any": [
+      "emerald"
+    ]
+  },
+  {
+    "question": "¿Cómo encuentro una aldea?",
+    "expect_any": [
+      "village"
+    ]
+  },
+  {
+    "question": "¿Cómo funciona el yunque?",
+    "expect_any": [
+      "anvil"
+    ]
+  },
+  {
+    "question": "¿Qué mods recomiendas para mejorar el rendimiento?",
+    "expect_any": [
+      "sodium",
+      "lithium",
+      "performance",
+      "optimi"
+    ]
+  },
+  {
+    "question": "Quiero shaders realistas para Java",
+    "expect_any": [
+      "shader"
+    ]
+  },
+  {
+    "question": "¿Qué es el mod Create?",
+    "expect_any": [
+      "create"
+    ]
+  },
+  {
+    "question": "Necesito un minimapa para Fabric",
+    "expect_any": [
+      "minimap",
+      "xaero",
+      "journeymap"
+    ]
+  },
+  {
+    "question": "¿Qué trae la última actualización de Minecraft?",
+    "expect_any": [
+      "update",
+      "release"
+    ]
+  }
+]

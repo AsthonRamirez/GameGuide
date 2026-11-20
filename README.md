@@ -11,7 +11,10 @@ Asistente inteligente de Minecraft con recuperación aumentada (RAG), búsqueda 
 - **Likes / dislikes:** cada dispositivo puede emitir un voto por consulta y cambiarlo posteriormente.
 - **Persistencia:** se almacena solo la primera pregunta y la primera respuesta de cada sesión. Los mensajes de seguimiento no se guardan como consultas separadas.
 - **Búsqueda semántica local:** FastEmbed con `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2` genera embeddings localmente y Supabase pgvector recupera documentos por similitud. No requiere una API de embeddings de pago.
-- **Fallback:** si pgvector o FastEmbed no están disponibles, la recuperación usa BM25; para la pregunta frecuente de las élitras existe una ficha Vanilla de respaldo.
+- **Recuperación híbrida (v1.1):** los documentos se dividen en fragmentos de ~800 caracteres; los documentos recién descargados y los ya guardados se rankean **juntos** con búsqueda semántica (con umbral de similitud) + BM25, fusionados por posición (RRF).
+- **Fallback:** si pgvector o FastEmbed no están disponibles, la recuperación usa BM25; `backend/app/data/curated_faq.json` contiene fichas curadas de las preguntas más frecuentes de Vanilla.
+- **IA intercambiable:** Gemini por defecto; cualquier API compatible con OpenAI (Mistral, Groq…) con solo cambiar variables de entorno.
+- **Seguridad:** límite de peticiones por IP, CORS restringido, RLS en Supabase y filtro para no publicar consultas con datos personales.
 - **Modrinth:** búsqueda de mods, modpacks, shaders y resource packs.
 
 ## Stack
@@ -35,11 +38,22 @@ GameGuide-main/
 ├── backend/
 │   ├── app/
 │   │   ├── api/                 # Rutas y esquemas HTTP
-│   │   ├── core/                # Configuración
+│   │   ├── core/                # Configuración y límite de peticiones
+│   │   ├── data/                # curated_faq.json (fichas curadas)
 │   │   └── services/
-│   │       └── gameguide.py     # RAG, embeddings, Gemini, Modrinth
+│   │       ├── sources.py       # Wiki, Help Center, minecraft.net, Modrinth, fichas
+│   │       ├── retrieval.py     # Recuperación híbrida y ranking (chunks + BM25 + RRF)
+│   │       ├── intent.py        # Categoría, ¿mod?, reescritura de seguimientos
+│   │       ├── generation.py    # Prompt y respuesta
+│   │       ├── llm.py           # Proveedor de IA intercambiable (Gemini / OpenAI-compatible)
+│   │       ├── embeddings.py    # Embeddings locales (FastEmbed)
+│   │       ├── persistence.py   # Supabase, votos y métricas
+│   │       └── textutils.py     # BM25, chunking, RRF
+│   ├── scripts/                 # backfill_chunks.py, eval_retrieval.py
+│   ├── tests/                   # pytest + eval_questions.json
 │   ├── .env.example
 │   └── requirements.txt
+├── docs/OPTIMIZACION.md         # Qué se cambió y por qué
 ├── database/
 │   └── supabase_schema.sql      # Tablas, migraciones y función pgvector
 └── frontend/
@@ -52,7 +66,7 @@ GameGuide-main/
 
 ## Requisitos
 
-- Python 3.10 o superior.
+- Python 3.12 recomendado (3.14 da problemas de compatibilidad en Windows).
 - Node.js LTS y npm.
 - Proyecto Supabase.
 - API Key de Gemini.
@@ -72,7 +86,16 @@ El script:
 - crea/actualiza `chat_interactions` con `is_public`;
 - crea `chat_votes` para likes/dislikes;
 - elimina la columna de comentarios de la tabla de feedback antigua, si existe;
-- crea la función `match_knowledge_documents` usada por la búsqueda semántica.
+- crea `knowledge_chunks` y la función `match_knowledge_chunks` (búsqueda semántica por fragmentos, con umbral);
+- crea `dashboard_metrics` (métricas calculadas en SQL) y activa RLS en todas las tablas;
+- endurece `match_chat_interactions` (misma edición/versión, con evidencia, sin dislikes).
+
+**Si vienes de la versión anterior**, después de ejecutar el SQL indexa tus documentos guardados:
+
+```powershell
+cd backend
+python -m scripts.backfill_chunks
+```
 
 Si ya tienes datos de la versión anterior, realiza primero un respaldo. El script conserva las consultas existentes y añade las columnas/tablas necesarias. No borra las consultas históricas.
 
@@ -100,6 +123,8 @@ GEMINI_BACKUP_MODEL=gemini-3.8-flash
 CACHE_TTL_DAYS=14
 FRONTEND_ORIGIN=http://localhost:5173
 ```
+
+Para comparar proveedores sin tocar código: `LLM_PROVIDER=openai`, `LLM_BASE_URL`, `LLM_API_KEY`, `LLM_MODEL` (ver `.env.example`).
 
 No compartas el archivo `.env` ni publiques la `SUPABASE_SERVICE_ROLE_KEY`.
 
@@ -165,3 +190,14 @@ Si el modelo no puede cargarse o la función pgvector no está instalada, el bac
 ---
 
 **GameGuide AI** · Explora Minecraft. Descubre. Aprende. Juega.
+
+
+## Pruebas y evaluación
+
+```powershell
+cd backend
+pip install -r requirements-dev.txt
+python -m pytest -q                       # pruebas automáticas (sin red ni cuota)
+python -m scripts.eval_retrieval          # mide la recuperación con 26 preguntas reales
+python -m scripts.eval_retrieval --answers --csv resultados.csv   # además evalúa las respuestas
+```

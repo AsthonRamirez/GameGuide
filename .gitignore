@@ -44,3 +44,6 @@ dist/
 # ==============================
 .DS_Store
 Thumbs.db
+
+# Caché local de modelos de embeddings
+backend/.cache/

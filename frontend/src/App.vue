@@ -165,7 +165,7 @@ onMounted(loadData)
             </div>
             <form class="composer" @submit.prevent="sendMessage"><textarea v-model="question" rows="2" placeholder="Escribe tu pregunta sobre Minecraft…" @keydown.enter.exact.prevent="sendMessage"></textarea><button :disabled="busy||!question.trim()">{{ busy?'Consultando…':'Enviar pregunta →' }}</button></form>
             <p v-if="error" class="error-message">{{ error }}</p>
-            <p class="privacy-note">Solo la primera pregunta y su primera respuesta se guardan en la biblioteca pública. Los mensajes de seguimiento permanecen dentro de la sesión.</p>
+            <p class="privacy-note">Solo la primera pregunta y su primera respuesta se guardan en la biblioteca pública. Los mensajes de seguimiento permanecen dentro de la sesión. No escribas datos personales (correos, teléfonos, contraseñas): la biblioteca es pública y las consultas con esos datos no se publican.</p>
           </section>
           <aside class="chat-aside"><article><span>📚</span><h3>Respuestas fundamentadas</h3><p>Consulta información recuperada de fuentes y documentos relevantes.</p></article><article><span>🧭</span><h3>Contexto de juego</h3><p>Indica tu edición y versión para mejorar la precisión de las respuestas.</p></article><article><span>🌐</span><h3>Comunidad</h3><p>Las consultas principales se comparten para que otros jugadores puedan valorarlas.</p></article></aside>
         </div>
