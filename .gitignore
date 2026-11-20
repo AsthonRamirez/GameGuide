@@ -1,0 +1,46 @@
+
+# ==============================
+# VARIABLES DE ENTORNO
+# ==============================
+.env
+.env.*
+**/.env
+**/.env.*
+
+# Permitir plantillas de configuración
+!.env.example
+!**/.env.example
+
+# ==============================
+# PYTHON
+# ==============================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ==============================
+# NODE / VUE / VITE
+# ==============================
+node_modules/
+dist/
+.vite/
+
+# ==============================
+# EDITORES
+# ==============================
+.vscode/
+.idea/
+
+# ==============================
+# SISTEMA OPERATIVO
+# ==============================
+.DS_Store
+Thumbs.db
